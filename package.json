@@ -1,0 +1,33 @@
+{
+  "name": "uber-cache-helpers",
+  "description": "getEngine from config.",
+  "version": "0.1.0-DEV",
+  "author": "Rémy Hubscher <natim@mozilla.com>",
+  "homepage": "https://github.com/Natim/uber-cache-helpers",
+  "license" : "BSD",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Natim/uber-cache-helpers.git"
+  },
+  "keywords": [],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "dependencies": {
+    "uber-cache": "1.1.0",
+  },
+  "devDependencies": {
+	"lodash": "*",
+    "jshint": "*",
+	"mocha": "1.8.x",
+	"should": "*",
+
+	"mongodb": "1.3.23",
+    "uber-cache-mongodb": "0.0.1",
+	"uber-cache-memcached": "git+https://github.com/serby/uber-cache-memcached.git",
+	"uber-cache-redis": "git+https://github.com/serby/uber-cache-redis.git"
+  },
+  "scripts": {
+    "test": "make test"
+  }
+}

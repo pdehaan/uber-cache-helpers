@@ -21,7 +21,7 @@ We have three backends at the moment:
 Configure the Memory backend
 ============================
 
-.. code-block:: json
+.. code-block:: javascript
 
     var options = {"engine": "memory"};
 
@@ -29,7 +29,7 @@ Configure the Memory backend
 Configure the Redis backend
 ===========================
 
-.. code-block:: json
+.. code-block:: javascript
 
     var options = {
       "engine": "redis",
@@ -42,7 +42,7 @@ Configure the Redis backend
 
 These are default values, so you can also simply use:
 
-.. code-block:: json
+.. code-block:: javascript
 
     var options = {"engine": "redis"};
     
@@ -50,7 +50,7 @@ These are default values, so you can also simply use:
 Configure the Memcached backend
 ===============================
 
-.. code-block:: json
+.. code-block:: javascript
 
     var options = {
       "engine": "memcached",
@@ -61,7 +61,7 @@ Configure the Memcached backend
 
 These are default values, so you can also simply use:
 
-.. code-block:: json
+.. code-block:: javascript
 
     var options = {"engine": "memcached"};
 
@@ -69,7 +69,7 @@ These are default values, so you can also simply use:
 Configure the Memcached backend
 ===============================
 
-.. code-block:: json
+.. code-block:: javascript
 
     var options = {
       "engine": "mongodb",
@@ -89,13 +89,13 @@ just have the same Uber-Cache API for all of them.
 
 .. code-block:: javascript
 
-    var getCacheBackend = require("uber-cache-helpers).getCacheBackend;
+    var getCacheBackend = require("uber-cache-helpers").getCacheBackend;
 
     var cache = getCacheBackend(options);
 
-    cache.set('the key', 'the value', function() {
-      cache.get('the key', function(error, value) {
-        console.log(value)
+    cache.set("the key", "the value", function () {
+      cache.get("the key", function (error, value) {
+        console.log(value);
       })
     })
 

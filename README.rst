@@ -10,7 +10,7 @@ configuration.
 Available backends
 ==================
 
-We have three backends at the moment:
+We have four backends at the moment:
 
  * Memory
  * Redis
@@ -66,7 +66,7 @@ These are default values, so you can also simply use:
     var options = {"engine": "memcached"};
 
 
-Configure the Memcached backend
+Configure the MongoDB backend
 ===============================
 
 .. code-block:: javascript
@@ -99,7 +99,7 @@ just have the same Uber-Cache API for all of them.
       })
     })
 
-And that's just it !
+And that's just it!
 
 You can also get access directly to then engine using `cache.engine`:
 
